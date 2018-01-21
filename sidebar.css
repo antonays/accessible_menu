@@ -1,0 +1,150 @@
+.sidebar {
+  float: left;
+  left: 30px;
+  width: 60px;
+  background-color: white;
+  position: fixed;
+  top:110px;
+  z-index : 99;
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    left: 7px;
+  }
+  .sidebar.maximized {
+    width: 90%;
+  }
+}
+
+@media (min-width: 480px) {
+  .sidebar.maximized {
+    width: 400px;
+  }
+}
+
+.sidebar h2 {
+  color:#355B77;
+}
+.sidebar.maximized {
+  /*width: 400px;*/
+  border-style: ridge;
+  border-width: 4px;
+  border-color: #355B77;
+  overflow-y: scroll;
+  direction:ltr;
+  height: 70%;
+}
+.sidebar .icon-block {
+  min-height: 140px; 
+  cursor: pointer;
+  border: 1px solid #355B77;
+  box-shadow: 1px 2px #355B77;
+  color:#355B77;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+.sidebar .icon-block:hover {
+  border-top: 5px solid #355B77;
+  border-bottom: 5px solid #355B77;
+}
+
+.sidebar .icon-block .icon-block-description{
+  padding-left: 5px;
+  font-size:16px;
+}
+
+.sidebar .horizontal-icon{
+  cursor: pointer;
+  border: 1px solid #355B77;
+  box-shadow: 1px 2px #355B77;
+  color:#355B77;
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.sidebar .horizontal-icon:hover {
+  border-top: 3px solid #355B77;
+  border-bottom: 3px solid #355B77;
+}
+
+.sidebar a {
+  display: block;
+  /*padding: 0 30px 0 0px;*/
+  /*background-color: #f9f9f9;*/
+  color: #585858;
+  text-shadow: none!important;
+  font-size: 15px;
+  text-decoration: none;
+}
+.sidebar .icon-block: hover a {
+  background: #fff;
+  color: #2b7dbc;
+}
+.sidebar a i {
+  font-size: 18px;
+  top: 3px;
+  min-width: 30px;
+}
+.sidebar .menu-content {
+  display: none;
+}
+.sidebar.maximized .menu-content {
+  display: inline-block;
+}
+
+.sidebar .menu-content .row {
+  padding-top: 0px;
+  padding-bottom:0px;
+}
+
+.sidebar .menu-content .row [class*='col-'] {
+  padding: 5px 2px;
+}
+ 
+.sidebar .angle{
+  display: inline-block;
+  cursor: pointer;
+  font-size: 40px;
+  color: #000080;
+  border: 2px solid #000080;
+  padding: 0 7px;
+  margin : 0;
+  line-height: 46px;
+  border-radius: 56px;
+  background-color: #fff;
+  position:absolute;
+  left : 0px;
+}
+
+.sidebar .arrow{
+  display: inline-block;
+  cursor: pointer;
+  font-size: 32px;
+  color: #000080;
+  padding: 15px 5px;
+  margin : 0 2px;
+  line-height: 32px;
+  left : 0px;
+  background-color: white;
+}
+
+.menu_imgContainer img{
+  max-height:100%;
+  max-width:100%;
+
+}
+
+.menu_imgContainer{ 
+  vertical-align:middle; 
+  text-align:center;
+  max-height:65%;
+  max-width:65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.access_item:focus{
+  color:red;
+}
