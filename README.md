@@ -1,2 +1,3 @@
 # accessible_menu
-accessible_menu in hebrew
+
+Hebrew accessibility menu implemented with bootstrap and jQuery.
